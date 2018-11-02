@@ -1,6 +1,6 @@
 {
   "name": "msxcli-koa-temp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "a express base project",
   "main": "www/dev.js",
   "scripts": {

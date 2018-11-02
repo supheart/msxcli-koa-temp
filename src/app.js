@@ -55,10 +55,15 @@ render(app, {root: path.join(__dirname, 'views'), layout: '', viewExt: 'html'});
 // @template-on-end
 
 // @upload-on-begin
+const fs = require('fs');
 const multer = require('koa-multer');
+const uploadPath = path.join(__dirname, 'uploads');
+if(!fs.existsSync(uploadPath)){
+	fs.mkdirSync(uploadPath);
+}
 var storage = multer.diskStorage({
 	destination: function (req, file, cb) {
-		cb(null, './src/uploads/');
+		cb(null, uploadPath);
 	},
 	filename: function (req, file, cb) {
 		let pre = file.mimetype.split('/')[1] || '';
