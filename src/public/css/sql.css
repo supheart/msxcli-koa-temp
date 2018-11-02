@@ -1,0 +1,57 @@
+body {
+  background-color: #fff;
+  padding: 20px;
+}
+.op-wrap{
+  margin: 20px 50px;
+}
+.op-wrap table{
+  width: 100%;
+  font-family: verdana,arial,sans-serif;
+  font-size:11px;
+  color:#333333;
+  border-width: 1px;
+  border-color: #666666;
+  border-collapse: collapse;
+}
+.op-wrap table th {
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #dedede;
+}
+.op-wrap table td {
+  line-height: 20px;
+  box-sizing: border-box;
+  border-width: 1px;
+  padding: 8px;
+  border-style: solid;
+  border-color: #666666;
+  background-color: #ffffff;
+}
+.op-wrap table td:last-child {
+  width: 180px;
+}
+.op-wrap table td.empty {
+  text-align: center;
+}
+.op-wrap input{
+  width: 88%;
+  min-width: 100px;
+  height: 24px;
+}
+.op-wrap table button{
+  margin-right: 8px;
+}
+button{
+  width: 72px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.op-footer{
+  margin-top: 10px;
+  float: right;
+  font-size: 14px;
+}

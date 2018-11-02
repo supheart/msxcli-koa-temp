@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>文件上传</title>
+  <link rel="stylesheet" href="/css/upload.css">
+  <script src="/js/upload.js"></script>
+</head>
+<body>
+  <form action="/upload/action" method="post" enctype="multipart/form-data">
+    <div class="upload-file">
+      <input id="upload" name="file" type="file">
+      <input id="upload-name" type="text" placeholder="请选择上传文件" readonly="readonly" />
+      <button>上传文件</button>
+    </div>
+    <div id="img-div">
+      <img src="#" alt="上传图片">
+      <input type="submit">
+    </div>
+</form>
+</body>
+</html>

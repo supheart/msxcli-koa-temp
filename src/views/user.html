@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/user.css">
+  <script src="/js/user.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <h2 class="title">用户表单</h3>
+  <form action="/user/add" method="post" id="userForm" onsubmit="return check(this)">
+    <div class="form-item">
+      <label for="username">用户名：</label>
+      <input type="text" name="username" id="username">
+    </div>
+    <div class="form-item">
+      <label for="password">密码：</label>
+      <input type="password" name="password" id="password">
+    </div>
+    <div class="form-item error-item">
+      <p class="error">请填写完整表单</p>
+    </div>
+    <div class="form-item submit">
+      <button>提交</button>
+    </div>
+  </form>
+</body>
+</html>

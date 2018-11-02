@@ -1,0 +1,53 @@
+{
+  "name": "msxcli-koa-temp",
+  "version": "0.1.0",
+  "description": "a express base project",
+  "main": "www/dev.js",
+  "scripts": {
+    "start": "node www/dev.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependenciesType": {
+    "base": {
+      "jsonwebtoken": "^8.3.0",
+      "kcors": "^2.2.2",
+      "koa": "^2.6.1",
+      "koa-bodyparser": "^4.2.1",
+      "koa-jwt": "^3.5.1",
+      "koa-router": "^7.4.0",
+      "koa-session": "^5.10.0",
+      "log4js": "^3.0.6"
+    },
+    "page": {
+      "koa-ejs": "^4.1.2",
+      "koa-static": "^5.0.0"
+    },
+    "upload": {
+      "koa-multer": "^1.0.2"
+    },
+    "sql": {
+      "knex": "^0.15.2",
+      "mysql": "^2.16.0"
+    }
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.3.0",
+    "kcors": "^2.2.2",
+    "knex": "^0.15.2",
+    "koa": "^2.6.1",
+    "koa-bodyparser": "^4.2.1",
+    "koa-ejs": "^4.1.2",
+    "koa-jwt": "^3.5.1",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.10.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^3.0.6",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1"
+  }
+}

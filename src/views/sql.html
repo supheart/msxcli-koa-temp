@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/sql.css">
+  <script src="/js/utils/axios.min.js"></script>
+  <script src="/js/sql.js"></script>
+  <title><%= name %>-page</title>
+</head>
+<body>
+  <h2>this is a <%= name %> page</h2>
+  <p>mysql 链接状态：， 数据库：test，表：test</p>
+  <div class="op-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>key</th>
+          <th>value</th>
+          <th>操作</th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          <td class="empty" colspan="4">暂无内容</td>
+        </tr>
+        <!-- <tr>
+          <td><span>123</span></td>
+          <td><span>456</span></td>
+          <td><span>789</span></td>
+          <td><button>修改</button> <button>删除</button></td>
+        </tr>
+        <tr>
+          <td><span>123</span></td>
+          <td><input type="text"></td>
+          <td><input type="text"></td>
+          <td><button>确定</button></td>
+        </tr> -->
+      </tbody>
+    </table>
+    <div class="op-footer">
+      <button onclick="addRow()">添加</button>
+    </div>
+  </div>
+</body>
+</html>
