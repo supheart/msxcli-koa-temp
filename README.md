@@ -36,7 +36,7 @@ npm start
 
 # 注意事项
 
-router文件夹使用约定配置，只能有路由文件，不能有其他文件内容
+router文件夹使用约定配置，只能有路由文件，不能有其他文件内容  
 验证是用jsonwebtoken
 
 # License
