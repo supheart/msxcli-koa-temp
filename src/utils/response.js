@@ -16,7 +16,7 @@ const errorCode = {
 	[RES_CODE.SQL_ERROR]: '操作失败',
 };
 
-exports.RES_CODE;
+exports.RES_CODE = RES_CODE;
 
 exports.getRes = function(data, code = 0, mes) {
 	if (typeof data === 'number') {

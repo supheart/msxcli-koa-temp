@@ -1,7 +1,6 @@
 const Koa = require('koa');
 const path = require('path');
 const session = require('koa-session');                         // session处理
-const koaStatic = require('koa-static');                        // 静态文件配置
 const bodyparser = require('koa-bodyparser');                   // 解析参数报文配置
 const runRouter = require('./router');                          // 路由配置
 const config = require('./configs');                            // 配置文件
@@ -48,6 +47,7 @@ app.use(session(sessConfig, app));
 
 // @template-on-begin
 // 设置静态文件
+const koaStatic = require('koa-static'); // 静态文件配置
 app.use(koaStatic(__dirname + '/public')); // 静态文件路径设置
 // 静态模板处理
 const render = require('koa-ejs');                              // ejs静态模版配置
